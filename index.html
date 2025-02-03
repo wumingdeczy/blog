@@ -1,0 +1,305 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>無名的CZY-个人博客</title>
+<link rel="icon" type="image/x-icon" href="https://i.ejiaimg.cn/201/2025/01/30/679b9dd2eb8bd.ico">
+<style>
+    body {
+        background-image: url('https://i.ejiaimg.cn/201/2025/01/25/6794b53bce18c.jpg');
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+    header {
+        background-color: rgba(0,0,0,0.2);
+        padding: 10px 0;
+		text-shadow: 0 0 10px rgba(255,255,255, 0.7);
+    }
+    .nav-list {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+    .nav-link {
+        display: inline-block;
+        padding: 10px 20px;
+        color: white;
+        text-decoration: none;
+        transition: color 0.3s, background-color 0.3s, transform 0.3s;
+    }
+    .nav-link:hover {
+        color: #ddd;
+        background-color: rgba(0,0,0,0.3);
+        transform: scale(1.05);
+    }
+    .nav-link:active {
+        transform: scale(0.95);
+        background-color: rgba(0,0,0,0.7);
+    }
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 20px;
+    }
+    .blk {
+        border: 1px solid #00C5CF;
+        box-shadow: 0 0 20px rgba(0, 75, 135, 0.6);
+        width: calc(25% - 20px); /* 3 columns, minus margins */
+        margin: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        box-sizing: border-box;
+		color: white;
+		text-shadow: 0 0 10px rgba(255,255,255, 0.9);
+        background-color: rgba(0,0,0,0.4);
+    }
+	.blk1 {
+        border: 1px solid #00C5CF;
+        box-shadow: 0 0 20px rgba(0, 75, 135, 0.6);
+        width: calc(50% - 20px); /* 3 columns, minus margins */
+        margin: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        box-sizing: border-box;
+		color: white;
+		text-shadow: 0 0 10px rgba(255,255,255, 0.9);
+        background-color: rgba(0,0,0,0.4);
+    }
+	.mainp{
+		animation: fadeInUp 1s ease-out forwards;
+    	animation-fill-mode: forwards;
+	}
+	.blk:hover{
+		background-color: rgba(0,0,0,0.8);
+		box-shadow: 0 0 25px rgba(0, 0, 0, 0.8);
+		transition: background-color 0.3s;
+		box-shadow: 0.3s;transform: 0.3s;
+	}
+	.blk1:hover{
+		background-color: rgba(0,0,0,0.8);
+		box-shadow: 0 0 25px rgba(0, 0, 0, 0.8);
+		transition: background-color 0.3s;
+		box-shadow: 0.3s;transform: 0.3s;
+	}
+    .blk p {
+        margin: 0;
+        padding: 5px;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+	.blk1 p {
+        margin: 0;
+        padding: 5px;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+	@keyframes fadeInUp {
+		from {
+			opacity: 0;
+			transform: translateY(50px);
+		}
+		to {
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
+	.infimg{
+		position: sticky;
+		width: 120px;
+		height: 120px;
+		border-radius: 10%;
+		border: 2px solid #00C5CF;
+		box-shadow: 0 0 20px rgba(0, 75, 135, 0.6);
+        transition: transform 0.3s ease;
+	}
+	.infimg:hover {
+        transform: scale(1.1);
+    }
+	.infb{
+		display: flex;
+		position: sticky;
+		top: 60px;
+		width: 85%;
+		margin: 0 auto;
+		border-radius: 10px;
+		border: 2px solid #00C5CF;
+		box-shadow: 0 0 20px rgba(0, 75, 135, 0.6);
+        transition: transform 0.3s ease;
+		padding: 10px;
+		background-color: rgba(0,0,0,0.4);
+	}
+	.infb:hover{
+		background-color: rgba(0,0,0,0.8);
+		box-shadow: 0 0 25px rgba(0, 0, 0, 0.8);
+		transition: background-color 0.3s;box-shadow: 0.3s;transform: 0.3s;
+	}
+	.infmw{
+		flex-grow: 1;
+		padding-left: 10px;
+		box-sizing: border-box;
+	}
+	.infm{
+		border-left: 1px solid rgb(0,0,0);
+        background-color: rgba(0,0,0,0.0.5);
+        color: white;
+        flex-grow: 1; /* 使 .infm 填充剩余空间 */
+        padding: 10px; /* 添加内边距 */
+        box-sizing: border-box;
+		padding-top:3px;
+		padding-left:10px;
+		padding-bottom: 3px;
+		line-height: 0px;
+	}
+	.txtstl{
+		text-shadow: 0 0 10px rgba(255,255,255, 0.7);
+	}
+	hr{
+		border-color: black;
+	}
+	.bilibili{
+		display: inline-block;
+		filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.6)); 
+		width: 60px;
+		height: auto;
+		margin-top: -3px;
+		margin-left: -5px;
+		margin-bottom: -3px;
+		
+	}
+	.bilibili:hover{
+		width: 70px;
+		height: auto;
+		filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.9)); 
+		transition: width 0.3s, height 0.3s, filter 0.3s, transform 0.3s;
+	}
+	.fandomwiki{
+		display: inline-block;
+		filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.6)); 
+		width:125px;
+		margin-top:-5px;
+		margin-bottom: -7px;
+	}
+	.fandomwiki:hover{
+		width: 140px;
+		height: auto;
+		filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.9)); 
+		transition: width 0.3s, height 0.3s, filter 0.3s, transform 0.3s;
+	}
+	.dgimg{
+		position: sticky;
+		width: 100%;
+		height: auto;
+		border-radius: 10%;
+		border: 2px solid #00C5CF;
+		box-shadow: 0 0 20px rgba(0, 75, 135, 0.6);
+        transition: transform 0.3s ease;
+	}
+	.dgimg:hover{
+        transform: scale(1.1);
+	}
+	.dginfw{
+		flex-grow: 1;
+		padding-left: 10px;
+		box-sizing: border-box;
+	}
+	.dginf{
+		border-left: 1px solid rgb(0,0,0);
+        background-color: rgba(0,0,0,0.0.5);
+        color: white;
+        flex-grow: 1;
+        padding: 10px;
+        box-sizing: border-box;
+		padding-top:3px;
+		padding-left:10px;
+		padding-bottom: 3px;
+		line-height: 15px;
+		word-wrap : break-word ;
+	}
+	.dginfn{
+		display: flex;
+	}
+	a{
+		display: inline-block;
+		color:aqua;
+		transition: color 0.5s ease ,transform 0.5s ease;
+		
+	}
+	a:hover{
+		color: purple;
+		transform: scale(1.1);
+	}
+</style>
+</head>
+<body>
+<header>
+    <nav>
+        <ul class="nav-list">
+            <li><a href="index.html" class="nav-link">首页</a></li>
+            <li><a href="articles.html" class="nav-link">文章</a></li>
+            <li><a href="more.html" class="nav-link">更多</a></li>
+        </ul>
+    </nav>
+</header><br>
+	<div class="mainp">
+		<div class="infb">
+			<img src="https://i.ejiaimg.cn/201/2025/01/25/6794b553b6189.jpg" alt="头像" class="infimg" title="無名的CZY">
+			<div class="infmw">
+				<div class="infm">
+					<p><b></b><span class="txtstl"><big><big>無名的CZY</big></big></span></p>
+					<hr>
+					<p><b>性别：</b><span class="txtstl">男♂</span></p>
+					<hr>
+					<p><b>年龄：</b><span class="txtstl">16</span></p>
+					<hr>站外链接：
+					<a href="https://space.bilibili.com/3493289521056328?spm_id_from=333.33.0.0">
+						<div class="bilibili">
+							<img src="https://i.ejiaimg.cn/201/2025/02/03/67a08ee1618dd.png" alt="哔哩哔哩" title="bilibili主页" class="bilibili" >
+						</div>
+					</a>
+					<a href="https://backrooms.fandom.com/zh/wiki/User:Zeyang_Chen">
+						
+						<div class="fandomwiki">
+							<img src="https://i.ejiaimg.cn/201/2025/02/03/67a0aca7c0369.png" alt="Fandom" title="FBC-User主页" class="fandomwiki">
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="blk1">
+				<h2>
+					所在学校
+				</h2>
+				<hr>
+				<div class="dginfn">
+					<a href="https://baike.baidu.com/item/浙江工业大学附属德清高级中学/62464245">
+						<img src="https://i.ejiaimg.cn/201/2025/02/03/67a0ba502ce7d.webp" class="dgimg" alt="deqinggaojizhongxue" title="浙江工业大学附属德清高级中学" >
+					</a>
+					<div class="dginfw">
+						<div class="dginf">
+							<h3>
+								德清高级中学
+							</h3>
+							<p>
+								中国浙江省湖州市德清县境内的公办高中。<br>
+								浙江工业大学附属德清高级中学位于德清县康乾街道德升街136号，是浙江省一级重点高中、浙江省省首批一级特色示范高中、浙江省文明单位。<br>
+								<a href="https://baike.baidu.com/item/浙江工业大学附属德清高级中学/62464245"><i><b><div class="lj">点击查看更多</div></b></i></a>
+							</p>
+						</div>
+					</div>
+				</div>	
+			</div>
+			<div class="blk1">
+				<h2>
+					小<i>“事业”</i>
+				</h2>
+				<hr>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
